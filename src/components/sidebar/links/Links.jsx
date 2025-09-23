@@ -27,7 +27,7 @@ const Links = () => {
   const items = ['Homepage', 'Services', 'Portfolio', 'Content', 'About']
 
   return (
-    <motion.div className="links" variants={variants}>
+    <motion.div className="links" variants={variants} whileHover={{scale:1.1}} whileTap={{scale:0.95}}>
       {items.map((item) => (
         <a href={`#${item}`} key={item}>
           {' '}
