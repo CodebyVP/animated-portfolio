@@ -14,7 +14,7 @@ line-height: 70px;
 width: 400px;
 
 }
-}
+
 
 .textContainer{
   flex: 1;
@@ -25,6 +25,14 @@ width: 400px;
 
 .formContainer{
   flex:1;
+  position: relative;
+
+  .phoneSvg{
+   stroke: orange;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+  }
 
   form{
   display: flex;
@@ -44,5 +52,6 @@ button{
   background-color: orange;
   cursor: pointer;
   font-weight: 500;
+}
 }
 }

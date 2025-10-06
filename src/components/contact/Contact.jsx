@@ -1,45 +1,123 @@
+import { useRef, useState } from 'react'
 import './contact.scss'
-import { motion } from 'framer-motion'
-const variant = {
-  initial: {
-    y: 500,
-    opacity: 0,
-  },
+import { motion, useInView } from 'framer-motion'
+import emailjs from '@emailjs/browser'
+
+const variants = {
+  initial: { y: 500, opacity: 0 },
   animate: {
     y: 0,
-    opacity: 0,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.1,
-    },
+    opacity: 1,
+    transition: { duration: 0.5, staggerChildren: 0.1 },
   },
 }
 
 const Contact = () => {
+  const ref = useRef()
+  const formRef = useRef()
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
+
+  const isInView = useInView(ref, { margin: '-100px' })
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault()
+
+  //   emailjs
+  //     .sendForm('service_xsrl5v7', 'template_s8ai8fg', form.current, {
+  //       publicKey: 'TrGdc1ag_T2KwMpig',
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log('SUCCESS!')
+  //       },
+  //       (error) => {
+  //         console.log('FAILED...', error.text)
+  //       }
+  //     )
+  // }
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm('service_xsrl5v7', 'template_s8ai8fg', formRef.current, {
+        publicKey: 'TrGdc1ag_T2KwMpig',
+      })
+      .then(
+        () => setSuccess(true),
+        () => setError(true)
+      )
+  }
+
   return (
-    <motion.div className="contact" variants={variants}>
-      <div className="textContainer">
-        <h1>Let's work together</h1>
-        <div className="item">
+    <motion.div
+      ref={ref}
+      className="contact"
+      variants={variants}
+      initial="initial"
+      whileInView="animate"
+    >
+      <motion.div className="textContainer" variants={variants}>
+        <motion.h1 variants={variants}>Let's work together</motion.h1>
+        <motion.div variants={variants} className="item">
           <h2>Mail</h2>
           <span>vinayprajapati0204@gmail.com</span>
-        </div>
-        <div className="item">
+        </motion.div>
+        <motion.div variants={variants} className="item">
           <h2>Address</h2>
           <span>Modinagar, UP India</span>
-        </div>
-        <div className="item">
+        </motion.div>
+        <motion.div variants={variants} className="item">
           <h2>Phone</h2>
           <span>9897700904</span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
+
       <div className="formContainer">
-        <form>
-          <input type="text" required placeholder="Name" />
-          <input type="email" required placeholder="Email" />
-          <textarea rows={8} placeholder="Message" />
+        <motion.div
+          className="phoneSvg"
+          initial={{ opacity: 1 }}
+          whileInView={{ opacity: 0 }}
+          transition={{ delay: 3, duration: 1 }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="450px"
+            height="450px"
+            viewBox="0 0 32.666 32.666"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-phone"
+          >
+            <motion.path
+              strokeWidth={0.2}
+              fill="none"
+              initial={{ pathLength: 0 }}
+              animate={isInView && { pathLength: 1 }}
+              transition={{ duration: 3 }}
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+            />
+          </svg>
+        </motion.div>
+
+        <motion.form
+          ref={formRef}
+          onSubmit={sendEmail}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 4, duration: 1 }}
+        >
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Message" name="message" />
           <button>Submit</button>
-        </form>
+          {error && 'Error sending message'}
+          {success && 'Message sent successfully!'}
+        </motion.form>
       </div>
     </motion.div>
   )

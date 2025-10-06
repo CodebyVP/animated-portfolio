@@ -74,7 +74,7 @@ const IntroSection = () => {
         Writer content creator influencer
       </motion.div>
       <div className="imageContainer">
-        <img src="./hero.png" alt="" />
+        <img src="./VpImage.png" alt="" />
       </div>
     </div>
   )

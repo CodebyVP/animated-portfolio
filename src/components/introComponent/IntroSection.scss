@@ -1,3 +1,4 @@
+
 .hero{
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -20,8 +21,8 @@
     margin-left: 150px;
 
     h2{
-      font-size: 25px;
-      color: rebeccapurple;
+      font-size: 45px;
+      color: white;
       letter-spacing: 10px;
     }
     h1{
@@ -40,16 +41,20 @@
 
     img{
       width: 50px;
+    
   }
 
   }
-
   .imageContainer{
-    // width: 60%;
+    margin-right: 200px;
   height: 100%;
+  border-radius: 30%;
   position: absolute;
   top: 0;
   right: 0;
+  border: 10px solid white;
+   overflow: hidden;
+
 
 
 }
