@@ -42,80 +42,118 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/people.webp" alt="" />
+          {/* <img src="/people.webp" alt="" /> */}
           <h1>
-            <motion.b whileHover={{ color: 'orange' }}>Unique </motion.b>ideas
+            <motion.b whileHover={{ color: 'orange' }}>Tech Stack </motion.b>{' '}
           </h1>
         </div>
-        <div className="title">
+        {/* <div className="title">
           <h1>
             <motion.b whileHover={{ color: 'orange' }}>For Your </motion.b>
             Business
           </h1>
           <button>WHAT WE DO?</button>
-        </div>
+        </div> */}
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quod
-            ipsam voluptatem molestias pariatur, laborum iste voluptatum
-            accusamus voluptate omnis totam?
-          </p>
-          <motion.div className="servicesBtn" variants={variants}>
+          <h2 className="box-heading">Html</h2>
+          <img
+            src="./public/html_Logo.png"
+            className="serviceTagImg"
+            alt="htmlLogoImg"
+          />
+          {/* <motion.div className="servicesBtn" variants={variants}>
             <button>Github</button>
             <button>Deployed</button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quod
-            ipsam voluptatem molestias pariatur, laborum iste voluptatum
-            accusamus voluptate omnis totam?
-          </p>
-          <motion.div className="servicesBtn" variants={variants}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </motion.div>
+          <h2 className="box-heading">CSS</h2>
+          <img
+            src="./public/CSS_logo.png"
+            className="serviceTagImg"
+            alt="cssLogoImg"
+          />
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quod
-            ipsam voluptatem molestias pariatur, laborum iste voluptatum
-            accusamus voluptate omnis totam?
-          </p>
-
-          <motion.div className="servicesBtn" variants={variants}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </motion.div>
+          <h2 className="box-heading">JAVASCRIPT</h2>
+          <img
+            src="./public/javascript-logo.png"
+            className="serviceTagImg"
+            alt="Javascript"
+          />
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quod
-            ipsam voluptatem molestias pariatur, laborum iste voluptatum
-            accusamus voluptate omnis totam?
-          </p>
-          <motion.div className="servicesBtn" variants={variants}>
+          <h2 className="box-heading">React</h2>
+          <img
+            src="./public/React.png"
+            className="serviceTagImg"
+            alt="Javascript"
+          />
+        </motion.div>
+      </motion.div>
+      {/* bottom divs */}
+      <motion.div className="listContainer" variants={variants}>
+        <motion.div
+          className="box"
+          whileHover={{ background: 'lightgray', color: 'black' }}
+        >
+          <h2 className="box-heading">Framer motion</h2>
+          <img
+            src="./public/framer-motion-logo.svg"
+            className="serviceTagImg"
+            alt="htmlLogoImg"
+          />
+          {/* <motion.div className="servicesBtn" variants={variants}>
             <button>Github</button>
             <button>Deployed</button>
-          </motion.div>
+          </motion.div> */}
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: 'lightgray', color: 'black' }}
+        >
+          <h2 className="box-heading">CSS</h2>
+          <img
+            src="./public/CSS_logo.png"
+            className="serviceTagImg"
+            alt="cssLogoImg"
+          />
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: 'lightgray', color: 'black' }}
+        >
+          <h2 className="box-heading">JAVASCRIPT</h2>
+          <img
+            src="./public/javascript-logo.png"
+            className="serviceTagImg"
+            alt="Javascript"
+          />
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ background: 'lightgray', color: 'black' }}
+        >
+          <h2 className="box-heading">React</h2>
+          <img
+            src="./public/javascript-logo.png"
+            className="serviceTagImg"
+            alt="Javascript"
+          />
         </motion.div>
       </motion.div>
     </motion.div>
