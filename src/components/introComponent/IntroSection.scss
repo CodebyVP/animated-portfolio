@@ -41,22 +41,20 @@
 
     img{
       width: 50px;
+      align-items: center;
     
   }
 
   }
   .imageContainer{
-    margin-right: 200px;
-  height: 100%;
+    margin-right: 100px;
+  height: 85%;
   border-radius: 30%;
   position: absolute;
   top: 0;
   right: 0;
-  border: 10px solid white;
+  border: 5px solid white;
    overflow: hidden;
-
-
-
 }
 
 .slidingTextContainer{
@@ -67,6 +65,7 @@
  color:#ffffff09 ;
  width: 50%;
  font-weight: bold;
+ 
 }
 
 }

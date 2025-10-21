@@ -71,7 +71,7 @@ const IntroSection = () => {
         initial="initial"
         animate="animate"
       >
-        Writer content creator influencer
+        [ Web Developer ] [ UI Designer ] [ Creative Thinker ]
       </motion.div>
       <div className="imageContainer">
         <img src="./VpImage.png" alt="" />
