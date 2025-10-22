@@ -42,18 +42,10 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          {/* <img src="/people.webp" alt="" /> */}
           <h1>
             <motion.b whileHover={{ color: 'orange' }}>Tech Stack </motion.b>{' '}
           </h1>
         </div>
-        {/* <div className="title">
-          <h1>
-            <motion.b whileHover={{ color: 'orange' }}>For Your </motion.b>
-            Business
-          </h1>
-          <button>WHAT WE DO?</button>
-        </div> */}
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
@@ -66,10 +58,6 @@ const Services = () => {
             className="serviceTagImg"
             alt="htmlLogoImg"
           />
-          {/* <motion.div className="servicesBtn" variants={variants}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </motion.div> */}
         </motion.div>
         <motion.div
           className="box"
@@ -117,16 +105,12 @@ const Services = () => {
             className="serviceTagImg"
             alt="htmlLogoImg"
           />
-          {/* <motion.div className="servicesBtn" variants={variants}>
-            <button>Github</button>
-            <button>Deployed</button>
-          </motion.div> */}
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2 className="box-heading">CSS</h2>
+          <h2 className="box-heading">SCSS</h2>
           <img
             src="./public/CSS_logo.png"
             className="serviceTagImg"
@@ -137,7 +121,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2 className="box-heading">JAVASCRIPT</h2>
+          <h2 className="box-heading"></h2>
           <img
             src="./public/javascript-logo.png"
             className="serviceTagImg"
@@ -148,7 +132,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2 className="box-heading">React</h2>
+          <h2 className="box-heading">Node Js</h2>
           <img
             src="./public/javascript-logo.png"
             className="serviceTagImg"

@@ -5,27 +5,29 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 const items = [
   {
     id: '1',
-    title: 'React Commerce',
-    img: 'https://images.pexels.com/photos/6446709/pexels-photo-6446709.jpeg',
-    desc: '      Lorem ipsum dolor, ',
+    title: 'ApnaCart',
+    img: './public/Apna.png',
+    desc:
+      'ApnaCart is a E-commerce website for men, women and kids From this platform you will be able to buy all fashion products online with best of the prices.' +
+      'TachStack:- JavaScript, Html,Css ',
   },
   {
     id: '2',
-    title: 'Next.js Commerce',
-    img: 'https://images.pexels.com/photos/7988089/pexels-photo-7988089.jpeg',
-    desc: '      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nulla',
+    title: 'Avni computer solution. ',
+    img: './public/AvniImg.png',
+    desc: `It's a computer services shop website it's an e-commerce platform offering a diverse range of tech solutions.This is servier provider website. TachStack:- JavaScript, HTML,CSS`,
   },
   {
     id: '3',
-    title: 'Javascript app',
-    img: 'https://media.istockphoto.com/id/641130656/photo/html-web-design-code-for-developers-and-designers.jpg?s=1024x1024&w=is&k=20&c=zPLhgKpmQp4JACyU4UY2Rb2SH2XsIW3RLLkGf7o3MzI=',
-    desc: '      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nulla officia  repudiandae totam?',
+    title: 'Movie star web',
+    img: './public/movieStar.PNG',
+    desc: 'MovieStar: Your cinematic hub! Catch the latest news, trailers, and reviews. Join a vibrant community of film lovers. Lights, camera, action – let the movie magic begin. TachStack:- JavaScript, HTML,CSS',
   },
   {
     id: '4',
-    title: 'Music app',
-    img: 'https://images.pexels.com/photos/6686455/pexels-photo-6686455.jpeg',
-    desc: '      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nulla officia temporibus, autem asperiores aspernatur facilis tempore aliquam dolores rerum iusto dolorum alias libero quis amet incidunt voluptatibus repudiandae totam?',
+    title: 'Todo App',
+    img: 'TodoApp.PNG',
+    desc: 'A simple and efficient task management app that allows users to add, edit, and delete tasks. Stay organized and keep track of your daily activities with ease.',
   },
 ]
 
@@ -47,7 +49,10 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <motion.div className="textContainerBtn">
+              <button>Deploy</button>
+              <button>Github</button>
+            </motion.div>
           </motion.div>
         </div>
       </div>
