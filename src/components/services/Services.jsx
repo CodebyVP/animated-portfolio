@@ -110,33 +110,11 @@ const Services = () => {
           className="box"
           whileHover={{ background: 'lightgray', color: 'black' }}
         >
-          <h2 className="box-heading">SCSS</h2>
-          <img
-            src="./public/CSS_logo.png"
-            className="serviceTagImg"
-            alt="cssLogoImg"
-          />
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: 'lightgray', color: 'black' }}
-        >
-          <h2 className="box-heading"></h2>
-          <img
-            src="./public/javascript-logo.png"
-            className="serviceTagImg"
-            alt="Javascript"
-          />
-        </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: 'lightgray', color: 'black' }}
-        >
           <h2 className="box-heading">Node Js</h2>
           <img
-            src="./public/javascript-logo.png"
+            src="./nodejs.png"
             className="serviceTagImg"
-            alt="Javascript"
+            alt="cssLogoImg"
           />
         </motion.div>
       </motion.div>

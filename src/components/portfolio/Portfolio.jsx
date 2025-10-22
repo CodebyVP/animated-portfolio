@@ -10,24 +10,32 @@ const items = [
     desc:
       'ApnaCart is a E-commerce website for men, women and kids From this platform you will be able to buy all fashion products online with best of the prices.' +
       'TachStack:- JavaScript, Html,Css ',
+    deploy: 'https://apna-cart-three.vercel.app/',
+    github: 'https://github.com/VinayPrajapati04/ApnaCart',
   },
   {
     id: '2',
     title: 'Avni computer solution. ',
     img: './public/AvniImg.png',
     desc: `It's a computer services shop website it's an e-commerce platform offering a diverse range of tech solutions.This is servier provider website. TachStack:- JavaScript, HTML,CSS`,
+    deploy: 'https://avni-computer-solution-new.vercel.app/',
+    github: 'https://github.com/VinayPrajapati04/AvniComputerSolutionNew',
   },
   {
     id: '3',
     title: 'Movie star web',
     img: './public/movieStar.PNG',
     desc: 'MovieStar: Your cinematic hub! Catch the latest news, trailers, and reviews. Join a vibrant community of film lovers. Lights, camera, action – let the movie magic begin. TachStack:- JavaScript, HTML,CSS',
+    deploy: 'https://mini-project-3rd-year.vercel.app/',
+    github: 'https://github.com/VinayPrajapati04/MiniProject_3rd_Year',
   },
   {
     id: '4',
     title: 'Todo App',
     img: 'TodoApp.PNG',
     desc: 'A simple and efficient task management app that allows users to add, edit, and delete tasks. Stay organized and keep track of your daily activities with ease.',
+    deploy: 'https://todo-app-kappa-gules.vercel.app/',
+    github: 'https://github.com/VinayPrajapati04/Todo-App',
   },
 ]
 
@@ -50,8 +58,15 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <motion.div className="textContainerBtn">
-              <button>Deploy</button>
-              <button>Github</button>
+              {/* <button>Deploy</button>
+              <button>Github</button> */}
+
+              <a href={item.deploy} target="_blank" rel="noopener noreferrer">
+                <button>Deploy Link</button>
+              </a>
+              <a href={item.github} target="_blank" rel="noopener noreferrer">
+                <button>GitHub</button>
+              </a>
             </motion.div>
           </motion.div>
         </div>
