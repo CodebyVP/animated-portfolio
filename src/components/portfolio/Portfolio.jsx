@@ -6,7 +6,7 @@ const items = [
   {
     id: '1',
     title: 'ApnaCart',
-    img: './public/Apna.png',
+    img: './Apna.png',
     desc:
       'ApnaCart is a E-commerce website for men, women and kids From this platform you will be able to buy all fashion products online with best of the prices.' +
       'TachStack:- JavaScript, Html,Css ',
@@ -16,7 +16,7 @@ const items = [
   {
     id: '2',
     title: 'Avni computer solution. ',
-    img: './public/AvniImg.png',
+    img: './AvniImg.png',
     desc: `It's a computer services shop website it's an e-commerce platform offering a diverse range of tech solutions.This is servier provider website. TachStack:- JavaScript, HTML,CSS`,
     deploy: 'https://avni-computer-solution-new.vercel.app/',
     github: 'https://github.com/VinayPrajapati04/AvniComputerSolutionNew',

@@ -4,8 +4,6 @@ import IntroSection from './components/introComponent/IntroSection'
 import Parallax from './components/parallax/Parallax'
 import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
-// import Contact from './components/Contact/Contact'
-// import Contact from 'src/components/Contact/Contact'
 import Contact from './components/contact/Contact.jsx'
 import Cursor from './components/cursor/Cursor'
 
