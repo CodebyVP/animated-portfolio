@@ -66,11 +66,11 @@ const Contact = () => {
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Address</h2>
-          <span>Modinagar, UP India</span>
+          <span>Modinagar Ghaziabad</span>
         </motion.div>
         <motion.div variants={variants} className="item">
           <h2>Phone</h2>
-          <span>9897700904</span>
+          <span>+91 9897700904</span>
         </motion.div>
       </motion.div>
 
@@ -111,9 +111,9 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={8} placeholder="Message" name="message" />
+          <input type="text" className='FormInputs' required placeholder="Name" name="name" />
+          <input type="email" className='FormInputs' required placeholder="Email" name="email" />
+          <textarea rows={8} className='FormMsg' placeholder="Message" name="message" />
           <button>Submit</button>
           {error && 'Error sending message'}
           {success && 'Message sent successfully!'}

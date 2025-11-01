@@ -1,4 +1,4 @@
-
+@import"../../App.scss";
 
 .cursor{
 
@@ -9,5 +9,9 @@
   position: fixed;
   z-index: 999;
 
+
+@include mobile{
+  display: none;
+}
 
 }
