@@ -54,7 +54,7 @@ const Services = () => {
         >
           <h2 className="box-heading">Html</h2>
           <img
-            src="./public/html_Logo.png"
+            src="./html_Logo.png"
             className="serviceTagImg"
             alt="htmlLogoImg"
           />
@@ -65,7 +65,7 @@ const Services = () => {
         >
           <h2 className="box-heading">CSS</h2>
           <img
-            src="./public/CSS_logo.png"
+            src="./CSS_logo.png"
             className="serviceTagImg"
             alt="cssLogoImg"
           />
@@ -76,7 +76,7 @@ const Services = () => {
         >
           <h2 className="box-heading">JAVASCRIPT</h2>
           <img
-            src="./public/javascript-logo.png"
+            src="./javascript-logo.png"
             className="serviceTagImg"
             alt="Javascript"
           />
@@ -87,7 +87,7 @@ const Services = () => {
         >
           <h2 className="box-heading">React</h2>
           <img
-            src="./public/React.png"
+            src="./React.png"
             className="serviceTagImg"
             alt="Javascript"
           />
@@ -101,7 +101,7 @@ const Services = () => {
         >
           <h2 className="box-heading">Framer motion</h2>
           <img
-            src="./public/framer-motion-logo.svg"
+            src="./framer-motion-logo.svg"
             className="serviceTagImg"
             alt="htmlLogoImg"
           />

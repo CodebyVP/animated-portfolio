@@ -24,7 +24,7 @@ const items = [
   {
     id: '3',
     title: 'Movie star web',
-    img: './public/movieStar.PNG',
+    img: './movieStar.PNG',
     desc: 'MovieStar: Your cinematic hub! Catch the latest news, trailers, and reviews. Join a vibrant community of film lovers. Lights, camera, action – let the movie magic begin. TachStack:- JavaScript, HTML,CSS',
     deploy: 'https://mini-project-3rd-year.vercel.app/',
     github: 'https://github.com/VinayPrajapati04/MiniProject_3rd_Year',
