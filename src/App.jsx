@@ -1,4 +1,4 @@
-import './app.scss'
+import './App.scss'
 import Navbar from './components/navbar/Navbar'
 import IntroSection from './components/introComponent/IntroSection'
 import Parallax from './components/parallax/Parallax'
