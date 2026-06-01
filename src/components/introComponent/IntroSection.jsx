@@ -47,7 +47,7 @@ const IntroSection = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>VINAY PRAJAPATI</motion.h2>
+          <motion.h2 variants={textVariants}>VINAY DAKSH</motion.h2>
           <motion.h1 variants={textVariants}>
             Web developer and UI designer
           </motion.h1>
